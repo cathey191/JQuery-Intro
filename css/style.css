@@ -1,0 +1,21 @@
+*{
+	font-family: sans-serif;
+}
+
+.box{
+	width: 200px;
+	height: 200px;
+}
+
+.green{
+	background-color: green;
+}
+
+.red{
+	background-color: red;
+}
+
+.wider{
+	width: 500px;
+	background-color: blue;
+}
