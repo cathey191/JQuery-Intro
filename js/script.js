@@ -20,7 +20,7 @@ $(document).ready(function(){
 	$("ul li")
 */
 
-/* Events
+/* Common Events
 	click() click
 	dblclick() double click
 	mouseover() mouse is over it
@@ -33,10 +33,12 @@ $(document).ready(function(){
 	focus() when you enter into a form element
 	blur() when you leave the form element
 	submit() when you submit a form
+	ready()
 */
 
-/* Common Events
-	event.preventDefault();
+/* Common Effects [changes elements]
+	event.preventDefault() do not do the normal
+
 */
 
 	$("#myform").submit(function(){
@@ -48,9 +50,9 @@ $(document).ready(function(){
 		console.log("test");
 	});
 
-	$("#box1").click(function(){
-		// $("#box2").hide();
-		// $("#box2").show();
+	//$("#box1").click(function(){
+		//$("#box2").hide();
+		//$("#box2").show();
 		//$("#box2").toggle(5000);
 		//$("#box2").fadeOut(5000);
 		//$("#box2").fadeIn(5000);
@@ -58,6 +60,29 @@ $(document).ready(function(){
 		//$("#box2").removeClass("wider");
 		//$("#box2").toggleClass("wider");
 		//$("#box2").css("background-color", "yellow");
-		// $("#box2").css({"background-color":"pink","width":"1000px"});
-	})
+		//$("#box2").css({"background-color":"pink","width":"1000px"});
+	//})
+
+	/*$("#box1").click(function(){
+		$("#box1").toggleClass("higher");
+	});
+
+	$("#box2").click(function(){
+		$("#box2").toggleClass("higher");
+	});*/
+
+	/*$(".box").click(function(){
+		$(this).toggleClass("higher");
+	});*/
+
+	$("#button").click(function(){
+		//$("#paragraph").append(" This text adds to the end.");
+		//$("#paragraph").prepend("This text adds to the front");
+		//$("#paragraph").empty();
+		//$("#paragraph").remove();
+		// $("#paragraph").text("Overide the text");
+		// $("#paragraph").empty();
+		$("#list").append("<li class='listColor'>This is a list item</li>");
+		$("body").append("<div class='box blue'></div>")
+	});
 });
